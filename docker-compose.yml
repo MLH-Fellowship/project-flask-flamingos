@@ -1,0 +1,38 @@
+version: "3"
+services:
+  web:
+    build: .
+    restart: always
+    ports: 
+      - 5000:5000
+    environment: 
+      - FLASK_ENV
+    env_file:
+      - .env
+    volumes:
+      - .:/myportfolio
+    depends_on:
+      - db
+
+  db:
+    image: postgres
+    restart: always
+    env_file:
+      - .env
+
+  nginx:
+    image: jonasal/nginx-certbot:latest
+    restart: unless-stopped
+    env_file:
+      - ./nginx-certbot.env
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - nginx_secrets:/etc/letsencrypt
+      - ./conf.d/redirector.conf:/etc/nginx/conf.d/redirector.conf
+    depends_on:
+      - web
+
+volumes:
+  nginx_secrets:
