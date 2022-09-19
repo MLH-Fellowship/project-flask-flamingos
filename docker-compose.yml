@@ -1,0 +1,19 @@
+version: "3"
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - .:/myportfolio
+    depends_on:
+      - db
+
+  db:
+    image: postgres
+    restart: always
+    env_file:
+      - .env
