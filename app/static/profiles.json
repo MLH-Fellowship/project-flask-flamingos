@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Carson Johnson",
+        "photo": "./static/img/carson-profile-image.jpg",
+        "about": "",
+        "workExperience": [
+            {
+            "company": "",
+            "title": "",
+            "description": "",
+            "startMonth": "",
+            "startYear": "",
+            "endMonth": "",
+            "endYear": ""
+            }
+        ],
+        "hobbies": [],
+        "education": [
+            {
+            "school": "",
+            "major": "",
+            "startMonth": "",
+            "startYear": "",
+            "endMonth": "",
+            "endYear": ""
+            }
+        ]
+    },
+    {
+        "name": "Carson Johnson",
+        "photo": "./static/img/carson-profile-image.jpg",
+        "about": "",
+        "workExperience": [
+            {
+            "company": "",
+            "title": "",
+            "description": "",
+            "startMonth": "",
+            "startYear": "",
+            "endMonth": "",
+            "endYear": ""
+            }
+        ],
+        "hobbies": [],
+        "education": [
+            {
+            "school": "",
+            "major": "",
+            "startMonth": "",
+            "startYear": "",
+            "endMonth": "",
+            "endYear": ""
+            }
+        ]
+    },
+    {
+        "name": "Carson Johnson",
+        "photo": "./static/img/carson-profile-image.jpg",
+        "about": "",
+        "workExperience": [
+            {
+            "company": "",
+            "title": "",
+            "description": "",
+            "startMonth": "",
+            "startYear": "",
+            "endMonth": "",
+            "endYear": ""
+            }
+        ],
+        "hobbies": [],
+        "education": [
+            {
+            "school": "",
+            "major": "",
+            "startMonth": "",
+            "startYear": "",
+            "endMonth": "",
+            "endYear": ""
+            }
+        ]
+    }
+]

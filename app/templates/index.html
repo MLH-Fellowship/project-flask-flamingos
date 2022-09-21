@@ -30,11 +30,17 @@
         </div>
     </header>
 
-    <div class="profile">
-        <div id="profile-picture" class="profile-picture">
-            <img src="./static/img/logo.jpg">
+    <div id="header">
+        {% for profile in profiles %}
+        <div class="profile">
+            <div id="profile-picture" class="profile-picture">
+                <img src={{ profile.photo }}>
+            </div>
+            <h1>{{ profile.name }}</h1>
+            {% if %}
         </div>
-        <h1>{{ title }}</h1>
+        {% endfor %}
     </div>
+
 </body>
 </html>
