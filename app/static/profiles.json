@@ -95,7 +95,7 @@
     {
         "name": "Alia Abdulahi",
         "photo": "./static/img/alia-profile-image.jpg",
-        "about": "",
+        "about": "Hi! My name is Alia. I am a software engineer that went back to get my Bachelors in Computer Science. I also work in education and work with underrepresented students in the Boston Public Schools system learn how to code. My passions are in creating equitable pathways to technology for students, cooking, and learning new things.",
         "workExperience": [
             {
             "company": "Digital Ready",
