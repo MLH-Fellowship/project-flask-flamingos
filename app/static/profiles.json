@@ -2,29 +2,64 @@
     {
         "name": "Carson Johnson",
         "photo": "./static/img/carson-profile-image.jpg",
-        "about": "",
+        "about": "Hello my name is Carson Johnson! I am a student at Santa Fe College and future student at the University of Florida. I major in Computer Science and want to become a Software Engineer at a Big Tech company.",
         "workExperience": [
             {
-            "company": "",
-            "title": "",
-            "description": "",
-            "startMonth": "",
-            "startYear": "",
-            "endMonth": "",
-            "endYear": ""
+            "company": "CSG International",
+            "title": ".NET Engineer Intern",
+            "description": "Gained experience working in several areas of the largest BSS on AWS, the Ascendon product. Technologies:  C#, .NET Core, SQL, AWS, Azure, Agile Scrum, Sprints, Jira, Git, Elastic Search, back-end Responsibilities: Developed an API stub for one of the companies largest payment gateway vendor Decreased testing costs by 20%, integrated 3D Secure 2.0 into the stub to allow for 95% fraud protection. Created a component test to test the stub asynchronous as I developed it; 3D Secure 2.0 flow testing included. Presented to CEO and executives; made technical concepts easy to grasp; received 100% positive feedback",
+            "startMonth": "June",
+            "startYear": "2022",
+            "endMonth": "August",
+            "endYear": "2022"
+            },
+            {
+            "company": "Meta",
+            "title": "Career Insights Program Fellow",
+            "description": "Selected out of 2,000+ applicants to participate in Meta X ColorStack's Career Insights Program. Established connections with Meta engineers; participated in technical interview preparation. Led a diverse team, developed a software solution utilizing VR to increase access to jobs.",
+            "startMonth": "June",
+            "startYear": "2022",
+            "endMonth": "June",
+            "endYear": "2022"
+            },
+            {
+            "company": "Capital One",
+            "title": "Program Participant",
+            "description": "Selected out of 440 applicants; participated in Tech Mini-Mester; enhanced tech & soft skills with mentorship. Developed an AI chatbot using Python; Completed workshops on Intro to Cloud Computing/AWS, Built 10K NFT Collection, GitHub, Cyber Secure Coding, and Networked with Capital One executives and associates.",
+            "startMonth": "July",
+            "startYear": "2022",
+            "endMonth": "August",
+            "endYear": "2022"
             }
         ],
-        "hobbies": [],
+        "hobbies": ["Antique Shopping", "Hiking", "Mobile Development", "Full-Stack Development"],
         "education": [
             {
-            "school": "",
-            "major": "",
-            "startMonth": "",
-            "startYear": "",
-            "endMonth": "",
-            "endYear": ""
+            "school": "University of Central Florida",
+            "major": "Full-Stack Web Development",
+            "startMonth": "September",
+            "startYear": "2021",
+            "endMonth": "December",
+            "endYear": "2021"
+            },
+            {
+            "school": "Santa Fe College",
+            "major": "Computer Science",
+            "startMonth": "January",
+            "startYear": "2022",
+            "endMonth": "December",
+            "endYear": "2024"
+            },
+            {
+            "school": "Florida Southwestern State College",
+            "major": "General Studies (emphasis: Computer Science)",
+            "startMonth": "August",
+            "startYear": "2019",
+            "endMonth": "December",
+            "endYear": "2021"
             }
-        ]
+        ],
+        "locations": ["Italy", "Paris"]
     },
     {
         "name": "Carson Johnson",
