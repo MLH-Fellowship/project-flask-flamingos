@@ -11,7 +11,8 @@
             "startMonth": "June",
             "startYear": "2022",
             "endMonth": "August",
-            "endYear": "2022"
+            "endYear": "2022",
+            "present": false
             },
             {
             "company": "Meta",
@@ -20,7 +21,8 @@
             "startMonth": "June",
             "startYear": "2022",
             "endMonth": "June",
-            "endYear": "2022"
+            "endYear": "2022",
+            "present": false
             },
             {
             "company": "Capital One",
@@ -29,7 +31,8 @@
             "startMonth": "July",
             "startYear": "2022",
             "endMonth": "August",
-            "endYear": "2022"
+            "endYear": "2022",
+            "present": false
             }
         ],
         "hobbies": ["Antique Shopping", "Hiking", "Mobile Development", "Full-Stack Development"],
@@ -73,7 +76,8 @@
             "startMonth": "February",
             "startYear": "2021",
             "endMonth": "June",
-            "endYear": "2021"
+            "endYear": "2021",
+            "present": false
             },
             {
                 "company": "Major League Hacking",
@@ -82,7 +86,8 @@
                 "startMonth": "July",
                 "startYear": "2021",
                 "endMonth": "August",
-                "endYear": "2021"
+                "endYear": "2021",
+                "present": false
             },
             {
                 "company": "Code Differently",
@@ -91,7 +96,8 @@
                 "startMonth": "June",
                 "startYear": "2021",
                 "endMonth": "August",
-                "endYear": "2021"
+                "endYear": "2021",
+                "present": false
             },
             {
                 "company": "Code Differently",
@@ -100,7 +106,8 @@
                 "startMonth": "June",
                 "startYear": "2021",
                 "endMonth": "August",
-                "endYear": "2021"
+                "endYear": "2021",
+                "present": false
             }
         ],
         "hobbies": ["Jogging", "Video Games", "Cooking", "Mobile Development"],
@@ -116,29 +123,58 @@
         ]
     },
     {
-        "name": "Carson Johnson",
-        "photo": "./static/img/carson-profile-image.jpg",
-        "about": "",
+        "name": "Alia Abdulahi",
+        "photo": "./static/img/alia-profile-image.jpg",
+        "about": "Hi! My name is Alia. I am a software engineer that went back to get my Bachelors in Computer Science. I also work in education and work with underrepresented students in the Boston Public Schools system learn how to code. My passions are in creating equitable pathways to technology for students, cooking, and learning new things.",
         "workExperience": [
             {
-            "company": "",
-            "title": "",
-            "description": "",
-            "startMonth": "",
-            "startYear": "",
+            "company": "Digital Ready",
+            "title": "Computer Science Lab Leader",
+            "description": "I teach underrepresented Black and Latinx students in the Boston Public Schools system computer science skills to help them access economic opportunities in Boston's innovation economy.",
+            "startMonth": "September",
+            "startYear": "2022",
             "endMonth": "",
-            "endYear": ""
+            "endYear": "",
+            "present": true
+            },
+            {
+            "company": "Harvard Extension School",
+            "title": "Software Engineering Bootcamp Teaching Assistant",
+            "description": "Teach fullstack MERN to students, host office hours, and grade work.",
+            "startMonth": "April",
+            "startYear": "2019",
+            "endMonth": "April",
+            "endYear": "2020",
+            "present": false
+            },
+            {
+            "company": "WeSpire",
+            "title": "Associate Software Engineer",
+            "description": "Coded front-end features in React and back-end features in Ruby on Rails.",
+            "startMonth": "January",
+            "startYear": "2019",
+            "endMonth": "July",
+            "endYear": "2019",
+            "present": false
             }
         ],
-        "hobbies": [],
+        "hobbies": ["Cooking", "Concerts", "Comedy", "Acting", "Dancing", "Painting"],
         "education": [
             {
-            "school": "",
-            "major": "",
-            "startMonth": "",
-            "startYear": "",
-            "endMonth": "",
-            "endYear": ""
+            "school": "Bunker Hill Community College",
+            "major": "Computer Science",
+            "startMonth": "June",
+            "startYear": "2022",
+            "endMonth": "May",
+            "endYear": "2023"
+            },
+            {
+            "school": "The Grace Hopper Program at Fullstack Academy",
+            "major": "Fullstack Web Development",
+            "startMonth": "February",
+            "startYear": "2021",
+            "endMonth": "May",
+            "endYear": "2021"
             }
         ]
     }
