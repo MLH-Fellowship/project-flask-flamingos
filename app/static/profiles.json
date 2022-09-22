@@ -65,6 +65,34 @@
         "locations": ["Italy", "Paris"]
     },
     {
+        "name": "Sebastian Holguin",
+        "photo": "./static/img/carson-profile-image.jpg",
+        "about": "",
+        "workExperience": [
+            {
+            "company": "",
+            "title": "",
+            "description": "",
+            "startMonth": "",
+            "startYear": "",
+            "endMonth": "",
+            "endYear": "",
+            "present": false
+            }
+        ],
+        "hobbies": [],
+        "education": [
+            {
+            "school": "",
+            "major": "",
+            "startMonth": "",
+            "startYear": "",
+            "endMonth": "",
+            "endYear": ""
+            }
+        ]
+    },
+    {
         "name": "Alia Abdulahi",
         "photo": "./static/img/alia-profile-image.jpg",
         "about": "",
@@ -117,34 +145,6 @@
             "startYear": "2021",
             "endMonth": "May",
             "endYear": "2021"
-            }
-        ]
-    },
-    {
-        "name": "Sebastian Holguin",
-        "photo": "./static/img/carson-profile-image.jpg",
-        "about": "",
-        "workExperience": [
-            {
-            "company": "",
-            "title": "",
-            "description": "",
-            "startMonth": "",
-            "startYear": "",
-            "endMonth": "",
-            "endYear": "",
-            "present": false
-            }
-        ],
-        "hobbies": [],
-        "education": [
-            {
-            "school": "",
-            "major": "",
-            "startMonth": "",
-            "startYear": "",
-            "endMonth": "",
-            "endYear": ""
             }
         ]
     }
