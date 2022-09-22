@@ -62,29 +62,56 @@
         "locations": ["Italy", "Paris"]
     },
     {
-        "name": "Carson Johnson",
-        "photo": "./static/img/carson-profile-image.jpg",
-        "about": "",
+        "name": "Sebastian Holguin",
+        "photo": "./static/img/sebastian-profile-img.png",
+        "about": "Hello, and welcome to my about page! I am a current senior at Stony Brook University pursuing my BS in Applied Mathematics & Statistics and Information Systems. I am very interested in learning new computing software and languages to interlink my knowledge of mathematics with programming to collaborate with teams across the field.",
         "workExperience": [
             {
-            "company": "",
-            "title": "",
-            "description": "",
-            "startMonth": "",
-            "startYear": "",
-            "endMonth": "",
-            "endYear": ""
+            "company": "CodePath",
+            "title": "iOS Development Student",
+            "description": "Practiced the Scrum framework and utilized different technologies for each sprint such as Java, Python, React, Ruby, and various APIs. Completed 6 mobile applications, honing technical skills with Swift and XCode. Finished final project with two team members; presented to a panel of software engineers and won first place among 30 student groups.",
+            "startMonth": "February",
+            "startYear": "2021",
+            "endMonth": "June",
+            "endYear": "2021"
+            },
+            {
+                "company": "Major League Hacking",
+                "title": "Pre-Fellowship Fellow",
+                "description": "Worked on intensive projects over 4 weeks and collaborated with other engineers in short hackathon sprints. Completed a fully working project with two other participants for the final hackathon sprint using NodeJS, JavaScript, Express, and Linode. Won \"Top Project in a Pod\" category.",
+                "startMonth": "July",
+                "startYear": "2021",
+                "endMonth": "August",
+                "endYear": "2021"
+            },
+            {
+                "company": "Code Differently",
+                "title": "Software Engineer Apprentice",
+                "description": "Successfully completed over three months of immersive software development training in algorithms, object-oriented programming, Agile methodologies, Test Driven Development, testing and debugging. Tech stack used included Java, JUnit, Rest APIs, Spring Boot & React.",
+                "startMonth": "June",
+                "startYear": "2021",
+                "endMonth": "August",
+                "endYear": "2021"
+            },
+            {
+                "company": "Code Differently",
+                "title": "Software Engineer Apprentice",
+                "description": "Successfully completed over three months of immersive software development training in algorithms, object-oriented programming, Agile methodologies, Test Driven Development, testing and debugging. Tech stack used included Java, JUnit, Rest APIs, Spring Boot & React.",
+                "startMonth": "June",
+                "startYear": "2021",
+                "endMonth": "August",
+                "endYear": "2021"
             }
         ],
-        "hobbies": [],
+        "hobbies": ["Jogging", "Video Games", "Cooking", "Mobile Development"],
         "education": [
             {
-            "school": "",
-            "major": "",
-            "startMonth": "",
-            "startYear": "",
-            "endMonth": "",
-            "endYear": ""
+            "school": "Stony Brook University",
+            "major": "Applied Mathematics & Statistics",
+            "startMonth": "August",
+            "startYear": "2018",
+            "endMonth": "May",
+            "endYear": "2023"
             }
         ]
     },
