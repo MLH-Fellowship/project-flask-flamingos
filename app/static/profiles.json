@@ -11,7 +11,8 @@
             "startMonth": "June",
             "startYear": "2022",
             "endMonth": "August",
-            "endYear": "2022"
+            "endYear": "2022",
+            "present": false
             },
             {
             "company": "Meta",
@@ -20,7 +21,8 @@
             "startMonth": "June",
             "startYear": "2022",
             "endMonth": "June",
-            "endYear": "2022"
+            "endYear": "2022",
+            "present": false
             },
             {
             "company": "Capital One",
@@ -29,7 +31,8 @@
             "startMonth": "July",
             "startYear": "2022",
             "endMonth": "August",
-            "endYear": "2022"
+            "endYear": "2022",
+            "present": false
             }
         ],
         "hobbies": ["Antique Shopping", "Hiking", "Mobile Development", "Full-Stack Development"],
@@ -73,7 +76,8 @@
             "startMonth": "",
             "startYear": "",
             "endMonth": "",
-            "endYear": ""
+            "endYear": "",
+            "present": false
             }
         ],
         "hobbies": [],
@@ -89,7 +93,7 @@
         ]
     },
     {
-        "name": "Carson Johnson",
+        "name": "Sebastian Holguin",
         "photo": "./static/img/carson-profile-image.jpg",
         "about": "",
         "workExperience": [
@@ -100,7 +104,8 @@
             "startMonth": "",
             "startYear": "",
             "endMonth": "",
-            "endYear": ""
+            "endYear": "",
+            "present": false
             }
         ],
         "hobbies": [],
