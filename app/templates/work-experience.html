@@ -14,7 +14,11 @@
     <h2>{{ experience.company }}</h2>
     <h2>{{ experience.title }}</h2>
     <h3>{{ experience.description }}</h3>
-    <h3>{{ experience.startMonth }}/{{ experience.startYear }} : {{ experience.endMonth }}/{{ experience.endYear }}</h3>
+    {% if experience.present %}
+    <h3>{{ experience.startMonth }} {{ experience.startYear }} - Present</h3>
+    {% else %}
+    <h3>{{ experience.startMonth }} {{ experience.startYear }} - {{ experience.endMonth }} {{ experience.endYear }}</h3>
+    {% endif %}
     <hr style="width:100%;text-align:center">
     {% endfor %}
 </div>
