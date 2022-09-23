@@ -44,7 +44,8 @@
                 <img src={{ profile.photo }}>
             </div>
             <h1>{{ profile.name }}</h1>
-            <p>{{ '<br>'.join(profile.locations)|safe}}</p>
+            <p>Locations Visited:</p>
+            <span>{{ '<br>'.join(profile.locations)|safe}}</span>
         </div>
         {% endfor %}
     </div>

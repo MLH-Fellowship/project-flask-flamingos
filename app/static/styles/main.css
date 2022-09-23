@@ -95,6 +95,13 @@ body {
     font-size: 20px;
     font-weight: 700;
     color: white;
+    margin: 0;
+}
+
+.profile span {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
 }
 
 .profile img {
