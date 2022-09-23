@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+{% block body %}
+<div class="semi-header">
+    <h1>Welcome to our About Page!</h1>
+    <h3>Here's a little about us...</h3>
+</div>
+
+<hr style="width:70%;text-align:center">
+
+<div>
+{% for profile in profiles %}
+<div id="about">
+    <p>{{profile.about}}</p>
+</div>
+{% endfor %}
+{% endblock body %}

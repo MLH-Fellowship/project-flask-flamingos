@@ -29,3 +29,7 @@ def education():
 @app.route('/places')
 def places():
     return render_template('places.html', profiles = parsedProfiles, url=os.getenv("URL"))
+
+@app.route('/about')
+def aboutUs():
+    return render_template('about.html', profiles = parsedProfiles, url=os.getenv("URL"))
