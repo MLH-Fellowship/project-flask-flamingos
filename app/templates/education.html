@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+{% block body %}
+<div class="semi-header">
+    <h1>Welcome to our Experience Page!</h1>
+    <h3>Some of our work experiences include...</h3>
+</div>
+
+<hr style="width:70%;text-align:center">
+
+<div>
+{% for profile in profiles %}
+<div class="education">
+    {% for educationItem in profile["education"] %}
+    <h2>{{ educationItem.school }}</h2>
+    <h2>{{ educationItem.major }}</h2>
+    <h3>{{ educationItem.startMonth }} {{ educationItem.startYear }} - {{ educationItem.endMonth }} {{ educationItem.endYear }}</h3>
+    <hr style="width:100%;text-align:center">
+    {% endfor %}
+</div>
+{% endfor %}
+{% endblock body %}

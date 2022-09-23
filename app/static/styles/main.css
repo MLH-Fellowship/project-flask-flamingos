@@ -127,6 +127,14 @@ body {
     float: left;
 }
 
+.education {
+    text-align: center;
+    height: 320px;
+    margin: 1%;
+    width: 30%;
+    float: left;
+}
+
 div.vertical-line{
     width: 1px; /* Line width */
     background-color: black; /* Line color */
