@@ -159,6 +159,5 @@ div.vertical-line{
 #map {
     width: 500PX;
     height: 500px;
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
 }
