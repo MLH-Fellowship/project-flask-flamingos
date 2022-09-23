@@ -1,0 +1,8 @@
+{% for profile in profiles %}
+    <div class="profile">
+        <div id="profile-picture" class="profile-picture">
+            <img src={{ profile.photo }}>
+        </div>
+        <h1>{{ profile.name }}</h1>
+    </div>
+{% endfor %}

@@ -119,38 +119,46 @@ body {
     float: left;
 }
 
+.experience {
+    text-align: center;
+    height: 320px;
+    margin: 1%;
+    width: 30%;
+    float: left;
+}
+
 div.vertical-line{
     width: 1px; /* Line width */
     background-color: black; /* Line color */
     height: 100%; /* Override in-line if you want specific height. */
-    position: absolute; /* Causes the line to float to left of content. 
-      You can instead use position:absolute or display:inline-block
-      if this fits better with your design */
+    position: absolute; /* Causes the line to float to left of content.
+    You can instead use position:absolute or display:inline-block
+    if this fits better with your design */
 }
 
 .topnav {
     padding: 10px 10px;
     background-color: #1d539f;
     overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
     float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
     background-color: #ddd;
     color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
     color: white;
-  }
+}
