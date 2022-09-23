@@ -113,6 +113,13 @@ body {
     height: 200px;
 }
 
+#about p {
+    text-align: center;
+    width: 30%;
+    float: left;
+    margin: 0 1.5%;
+}
+
 .banner {
     padding: 20px 0px 50px 0px;
     height: 150px;
