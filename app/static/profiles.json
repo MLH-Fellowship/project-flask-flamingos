@@ -1,8 +1,12 @@
 [
     {
         "name": "Carson Johnson",
+        "firstName": "Carson",
         "photo": "./static/img/carson-profile-image.jpg",
         "about": "Hello my name is Carson Johnson! I am a student at Santa Fe College and future student at the University of Florida. I major in Computer Science and want to become a Software Engineer at a Big Tech company.",
+        "linkedIn": "https://www.linkedin.com/in/carson74johnson ",
+        "github": "https://github.com/cjohnson74",
+        "resume": "https://docs.google.com/document/d/1OhMUhtMjt0_1zBVzizBhAYNICdYJtOYmplixadGipmE/edit?usp=sharing",
         "workExperience": [
             {
             "company": "CSG International",
@@ -62,12 +66,17 @@
             "endYear": "2021"
             }
         ],
-        "locations": ["Italy", "Paris"]
+        "locations": ["Italy", "Paris"],
+        "hobbyImages": ["./static/img/hobbies/antique.jpeg", "./static/img/hobbies/hiking.jpeg", "./static/img/hobbies/mobile.png", "./static/img/hobbies/fullstack.png"]
     },
     {
         "name": "Sebastian Holguin",
+        "firstName": "Sebastian",
         "photo": "./static/img/sebastian-profile-img.png",
         "about": "Hello, and welcome to my about page! I am a current senior at Stony Brook University pursuing my BS in Applied Mathematics & Statistics and Information Systems. I am very interested in learning new computing software and languages to interlink my knowledge of mathematics with programming to collaborate with teams across the field.",
+        "linkedIn": "https://www.linkedin.com/in/sebastianholguin/",
+        "github": "https://github.com/sebastian-holguin",
+        "resume": "https://drive.google.com/file/d/1ZdOkhTR5AlJCABJPysRHQtctoUlSTzbD/view?usp=sharing",
         "workExperience": [
             {
             "company": "CodePath",
@@ -111,12 +120,17 @@
             "endYear": "2023"
             }
         ],
-        "locations": ["New York City, NY"]
+        "locations": ["Ecuador", "Philippines"],
+        "hobbyImages": ["./static/img/hobbies/jogging.jpeg", "https://media.timeout.com/images/103377964/750/562/image.jpg", "https://www.advrider.com/wp-content/uploads/2022/03/JuddS-Ecuador-Volcano-750x562.jpg", "http://cupboarddiaries.com/wp-content/uploads/2020/10/IMG_E4355-2-750x562.jpg", "./static/img/hobbies/mobile2.jpeg"]
     },
     {
         "name": "Alia Abdulahi",
+        "firstName": "Alia",
         "photo": "./static/img/alia-profile-image.jpg",
         "about": "Hi! My name is Alia. I am a software engineer that went back to get my Bachelors in Computer Science. I also work in education and work with underrepresented students in the Boston Public Schools system learn how to code. My passions are in creating equitable pathways to technology for students, cooking, and learning new things.",
+        "linkedIn": "https://www.linkedin.com/in/aliaaabdulahi/",
+        "github": "https://github.com/aliaaabdulahi",
+        "resume": "https://www.google.com",
         "workExperience": [
             {
             "company": "Digital Ready",
@@ -168,6 +182,7 @@
             "endYear": "2021"
             }
         ],
-        "locations": ["United Arab Emirates", "France"]
+        "locations": ["United Arab Emirates", "France"],
+        "hobbyImages": ["./static/img/hobbies/cooking2.jpeg", "./static/img/hobbies/concerts.jpeg", "./static/img/hobbies/comedy.jpeg", "./static/img/hobbies/acting.png", "./static/img/hobbies/dancing.jpeg", "./static/img/hobbies/painting.jpeg"]
     }
 ]

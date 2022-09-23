@@ -12,7 +12,7 @@ with open('app/static/profiles.json') as f:
 
 @app.route('/')
 def index():
-    return render_template('index.html', profiles = parsedProfiles, url=os.getenv("URL"))
+    return render_template('about.html', profiles = parsedProfiles, url=os.getenv("URL"))
 
 @app.route('/hobbies')
 def hobbies():
@@ -30,6 +30,6 @@ def education():
 def places():
     return render_template('places.html', profiles = parsedProfiles, url=os.getenv("URL"))
 
-@app.route('/about')
-def aboutUs():
-    return render_template('about.html', profiles = parsedProfiles, url=os.getenv("URL"))
+@app.route('/contact')
+def contact():
+    return render_template('contact.html', profiles = parsedProfiles, url=os.getenv("URL"))

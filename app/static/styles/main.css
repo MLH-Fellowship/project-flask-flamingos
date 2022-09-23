@@ -105,23 +105,36 @@ body {
 }
 
 .profile img {
-        border-radius: 50%;
-        max-width: 100%;
-        max-height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        padding: 20px;
-        object-fit: contain;
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 20px;
+    object-fit: contain;
 }
 
 .profile .profile-picture {
     margin-bottom: 30px;
-    height: 200px;
+    height: 250px; 
+    /*
+    changed height from 200px -> 250px
+    */
 }
 
-#about p {
+.map-profile {
+    margin-bottom: 30px;
+    height: 200px; 
+}
+
+.map-text {
+    padding: 50px
+}
+
+.about {
     text-align: center;
+    font-size: small;
     width: 30%;
     float: left;
     margin: 0 1.5%;
@@ -222,4 +235,11 @@ div.vertical-line{
     width: 500PX;
     height: 500px;
     margin: 0 auto;
+}
+
+.hobbyImages {
+    width:500px;
+    height: auto;
+    overflow: hidden;
+    object-fit: scale-down;
 }

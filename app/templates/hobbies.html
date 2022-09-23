@@ -12,6 +12,7 @@
 <div class="hobbies">
     {% for key in profile %}
     <h2>{{ profile.hobbies[loop.index0] }}</h2>
+    <img src = "{{ profile.hobbyImages[loop.index0] }}" class="hobbyImages">
     {% endfor %}
 </div>
 {% endfor %}

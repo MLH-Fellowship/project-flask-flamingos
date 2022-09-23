@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+{% block body %}
+<div class="semi-header">
+    <h1>Want to learn more about us? Contact us!</h1>
+</div>
+
+
+<div>
+{% for profile in profiles %}
+<div class="hobbies">
+    <h2>{{ profile.firstName }}'s <a href="{{profile.linkedIn}}">LinkedIn</a></h2>
+    <h2>{{ profile.firstName }}'s <a href="{{profile.github}}">Github</a></h2>
+    <h2>{{ profile.firstName }}'s <a href="{{profile.resume}}">Resume</a></h2>
+</div>
+{% endfor %}
+{% endblock body %}

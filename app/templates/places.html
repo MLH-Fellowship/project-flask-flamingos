@@ -29,7 +29,6 @@
         </div>
         <div class="topnav">
             <a href="/">Home</a>
-            <a href="/about">About us</a>
             <a href="/work-experience">Work Experiences</a>
             <a href="/hobbies">Hobbies</a>
             <a href="/education">Current/Previous Education</a>
@@ -41,7 +40,7 @@
     <div id="header">
         {% for profile in profiles %}
         <div class="profile">
-            <div id="profile-picture" class="profile-picture">
+            <div class="map-profile">
                 <img src={{ profile.photo }}>
             </div>
             <h1>{{ profile.name }}</h1>
@@ -49,7 +48,7 @@
             <span>{{ '<br>'.join(profile.locations)|safe}}</span>
         </div>
         {% endfor %}
-    </div>
+    </div c>
     <div id="map"></div>
     <div><em><p><center>The red markers are Alia's locations, the blue markers are Carson's, and the yellow markers are Sebastian. When more than one of us have gone to a location, we mix our colors to make new ones! </center></p></em></div>
     <script async defer
@@ -67,7 +66,8 @@
             ['<b>Italy</b><br> Visitor: Carson', 41.87, 12.56, "https://maps.google.com/mapfiles/ms/micons/blue.png"],
             ['<b>Paris, France</b><br> Visitors: Alia and Carson', 48.85, 2.35, "https://maps.google.com/mapfiles/ms/micons/purple.png"],
             ['<b>United Arab Emirates</b><br> Visitor: Alia', 23.42, 53.84, "https://maps.google.com/mapfiles/ms/micons/red.png"],
-            ['<b>New York City, New York</b><br> Visitor: Sebastian',40.73, -73.93,"https://maps.google.com/mapfiles/ms/micons/yellow.png"],
+            ['<b>Guayaquil, Ecuador</b><br> Visitor: Sebastian',-2.05, -79.88,"https://maps.google.com/mapfiles/ms/micons/yellow.png"],
+            ['<b>Cebu City, Philippines</b><br> Visitor: Sebastian',10.31, 123.88,"https://maps.google.com/mapfiles/ms/micons/yellow.png"],
         ];
 
         var infowindow = new google.maps.InfoWindow();
