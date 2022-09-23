@@ -10,14 +10,15 @@ body {
     font-family: "Roboto", serif;
     margin: 0px;
 }
-
+ /* NAV BAR STYLES */
 .nav-bar {
     width: 100%;
-    display: inline-block;
+    display: inline-flex;
     background-color: #1C539F;
     font-family: "Roboto", serif;
     font-weight: 700 !important;
     padding-top: 10px;
+    justify-content: space-around;
 }
 
 .nav-content .logo-touch-target {
@@ -33,8 +34,7 @@ body {
 
 .nav-logo {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .nav-logo img {
@@ -47,6 +47,33 @@ body {
     text-align: right;
     padding-top: 0px;
     padding-right: 0px;
+}
+
+.topnav {
+    padding: 10px 10px;
+    background-color: #1d539f;
+    overflow: hidden;
+  }
+  
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    color: white;
 }
 
 .profile {
@@ -127,30 +154,3 @@ div.vertical-line{
       You can instead use position:absolute or display:inline-block
       if this fits better with your design */
 }
-
-.topnav {
-    padding: 10px 10px;
-    background-color: #1d539f;
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    color: white;
-  }
