@@ -58,7 +58,34 @@
             zoom: 1,
         };
         var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+        var locations = [
+            ['<b>Italy,</b><br> Visitor: Carson', 41.87, 12.56, "https://maps.google.com/mapfiles/ms/micons/blue.png"],
+            ['<b>Paris, France,</b><br> Visitors: Alia and Carson', 48.85, 2.35, "https://maps.google.com/mapfiles/ms/micons/purple.png"],
+            ['<b>United Arab Emirates,</b><br> Visitor: Alia', 23.42, 53.84, "https://maps.google.com/mapfiles/ms/micons/red.png"],
+            ['<b>New York City, New York,</b><br> Visitor: Sebastian',40.73, -73.93,"https://maps.google.com/mapfiles/ms/micons/yellow.png"],
+        ];
+
+        var infowindow = new google.maps.InfoWindow();
+
+        var marker, i;
+
+        for (i = 0; i < locations.length; i++) {
+        
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                icon: locations[i][3],
+                map: map
+            });
+        
+            google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                return function () {
+                    infowindow.setContent(locations[i][0]);
+                    infowindow.open(map, marker);
+                }
+            })(marker, i));
         }
+    }
   </script>
 </body>
 </html>
