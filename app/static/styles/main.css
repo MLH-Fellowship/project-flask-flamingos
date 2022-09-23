@@ -79,7 +79,7 @@ body {
 .profile {
     background-color: #1d539f !important;
     text-align: center;
-    height: 320px;
+    height: 400px;
     margin-bottom: 50px;
     width: 33.33%;
     float: left;
@@ -89,6 +89,19 @@ body {
         font-size: 50px;
         font-weight: 700;
         color: white;
+}
+
+.profile p {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+
+.profile span {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
 }
 
 .profile img {
@@ -153,4 +166,11 @@ div.vertical-line{
     position: absolute; /* Causes the line to float to left of content. 
       You can instead use position:absolute or display:inline-block
       if this fits better with your design */
+}
+
+/* MAP STYLES */
+#map {
+    width: 500PX;
+    height: 500px;
+    margin: 0 auto;
 }
