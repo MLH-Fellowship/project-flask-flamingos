@@ -98,16 +98,6 @@
                 "endMonth": "August",
                 "endYear": "2021",
                 "present": false
-            },
-            {
-                "company": "Code Differently",
-                "title": "Software Engineer Apprentice",
-                "description": "Successfully completed over three months of immersive software development training in algorithms, object-oriented programming, Agile methodologies, Test Driven Development, testing and debugging. Tech stack used included Java, JUnit, Rest APIs, Spring Boot & React.",
-                "startMonth": "June",
-                "startYear": "2021",
-                "endMonth": "August",
-                "endYear": "2021",
-                "present": false
             }
         ],
         "hobbies": ["Jogging", "Video Games", "Travelling", "Cooking", "Mobile Development"],
