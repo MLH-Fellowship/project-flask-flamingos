@@ -19,8 +19,6 @@
     <title>{{ title }}</title>
 </head>
 
-{% include "menuBar.html" %}
-
 <body>
     <header class="nav-bar">
         <div class="nav-content">
@@ -41,10 +39,15 @@
     </header>
 
     <div id="header">
-        {% include "headShots.html" %}
+        {% for profile in profiles %}
+        <div class="profile">
+            <div id="profile-picture" class="profile-picture">
+                <img src={{ profile.photo }}>
+            </div>
+            <h1>{{ profile.name }}</h1>
+        </div>
+        {% endfor %}
     </div>
-
-    {% block body %}{% endblock %}
 
 </body>
 </html>

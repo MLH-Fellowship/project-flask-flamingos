@@ -10,14 +10,15 @@ body {
     font-family: "Roboto", serif;
     margin: 0px;
 }
-
+ /* NAV BAR STYLES */
 .nav-bar {
     width: 100%;
-    display: inline-block;
+    display: inline-flex;
     background-color: #1C539F;
     font-family: "Roboto", serif;
     font-weight: 700 !important;
     padding-top: 10px;
+    justify-content: space-around;
 }
 
 .nav-content .logo-touch-target {
@@ -33,8 +34,7 @@ body {
 
 .nav-logo {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .nav-logo img {
@@ -49,10 +49,37 @@ body {
     padding-right: 0px;
 }
 
+.topnav {
+    padding: 10px 10px;
+    background-color: #1d539f;
+    overflow: hidden;
+  }
+  
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    color: white;
+}
+
 .profile {
     background-color: #1d539f !important;
     text-align: center;
-    height: 320px;
+    height: 400px;
     margin-bottom: 50px;
     width: 33.33%;
     float: left;
@@ -62,6 +89,19 @@ body {
         font-size: 50px;
         font-weight: 700;
         color: white;
+}
+
+.profile p {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+
+.profile span {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
 }
 
 .profile img {
@@ -78,6 +118,13 @@ body {
 .profile .profile-picture {
     margin-bottom: 30px;
     height: 200px;
+}
+
+#about p {
+    text-align: center;
+    width: 30%;
+    float: left;
+    margin: 0 1.5%;
 }
 
 .banner {
@@ -169,4 +216,10 @@ div.vertical-line{
 /* Add a color to the active/current link */
 .topnav a.active {
     color: white;
+}
+/* MAP STYLES */
+#map {
+    width: 500PX;
+    height: 500px;
+    margin: 0 auto;
 }

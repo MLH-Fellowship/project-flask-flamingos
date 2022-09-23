@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content="Personal Portfolio">
+    <meta property="og:description" content="My Personal Portfolio">
+    <meta property="og:url" content="{{ url }}">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link lang='sass' rel="stylesheet" href="./static/styles/main.css">
+    <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
+    <title>{{ title }}</title>
+</head>
+<body onload="initialize()">
+    <header class="nav-bar">
+        <div class="nav-content">
+            <a href="/">
+                <div class="nav-logo">
+                    <img src="./static/img/logo.svg" />
+                </div>
+            </a>
+        </div>
+        <div class="topnav">
+            <a href="/">Home</a>
+            <a href="/experience">Work Experiences</a>
+            <a href="/hobbies">Hobbies</a>
+            <a href="/education">Current/Previous Education</a>
+            <a href="/places">Where We've Been</a>
+            <a href="/contact">Contact Information</a>
+          </div>
+    </header>
+
+    <div id="header">
+        {% for profile in profiles %}
+        <div class="profile">
+            <div id="profile-picture" class="profile-picture">
+                <img src={{ profile.photo }}>
+            </div>
+            <h1>{{ profile.name }}</h1>
+            <p>Locations Visited:</p>
+            <span>{{ '<br>'.join(profile.locations)|safe}}</span>
+        </div>
+        {% endfor %}
+    </div>
+    <div id="map"></div>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3NzA_fydt0gpj3j5wjYvLjgllpjnyZDs">
+  </script>
+  <script type="text/javascript">
+    function initialize() {
+        var mapOptions = {
+            center: new google.maps.LatLng(0, 0),
+            zoom: 1,
+        };
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+        var locations = [
+            ['<b>Italy</b><br> Visitor: Carson', 41.87, 12.56, "https://maps.google.com/mapfiles/ms/micons/blue.png"],
+            ['<b>Paris, France</b><br> Visitors: Alia and Carson', 48.85, 2.35, "https://maps.google.com/mapfiles/ms/micons/purple.png"],
+            ['<b>United Arab Emirates</b><br> Visitor: Alia', 23.42, 53.84, "https://maps.google.com/mapfiles/ms/micons/red.png"],
+            ['<b>New York City, New York,</b><br> Visitor: Sebastian',40.73, -73.93,"https://maps.google.com/mapfiles/ms/micons/yellow.png"],
+        ];
+
+        var infowindow = new google.maps.InfoWindow();
+
+        var marker, i;
+
+        for (i = 0; i < locations.length; i++) {
+        
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                icon: locations[i][3],
+                map: map
+            });
+        
+            google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                return function () {
+                    infowindow.setContent(locations[i][0]);
+                    infowindow.open(map, marker);
+                }
+            })(marker, i));
+        }
+    }
+  </script>
+</body>
+</html>
