@@ -18,7 +18,7 @@
     <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
     <title>{{ title }}</title>
 </head>
-<body>
+<body onload="initialize()">
     <header class="nav-bar">
         <div class="nav-content">
             <a href="/">
@@ -51,6 +51,14 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3NzA_fydt0gpj3j5wjYvLjgllpjnyZDs">
   </script>
-  <script src="/app/script/main.js"></script>
+  <script type="text/javascript">
+    function initialize() {
+        var mapOptions = {
+            center: new google.maps.LatLng(0, 0),
+            zoom: 1,
+        };
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        }
+  </script>
 </body>
 </html>
