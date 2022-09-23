@@ -34,7 +34,11 @@
     <div id="header">
         {% include "headShots.html" %}
     </div>
-
+    <div id="about">
+        {% for profile in profiles %}
+            <p>{{ profile.about }}</p>
+        {% endfor %}
+    </div>
     {% block body %}{% endblock %}
 
 </body>
