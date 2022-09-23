@@ -1,53 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "index.html" %}
+{% block body %}
+<div class="semi-header">
+    <h1>Welcome to our Education Page!</h1>
+    <h3>Some of our education include...</h3>
+</div>
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta property="og:title" content="Personal Portfolio">
-    <meta property="og:description" content="My Personal Portfolio">
-    <meta property="og:url" content="{{ url }}">
+<hr style="width:70%;text-align:center">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-
-    <link lang='sass' rel="stylesheet" href="./static/styles/main.css">
-    <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
-    <title>{{ title }}</title>
-</head>
-
-<body>
-    <header class="nav-bar">
-        <div class="nav-content">
-            <a href="/">
-                <div class="nav-logo">
-                    <img src="./static/img/logo.svg" />
-                </div>
-            </a>
-        </div>
-        <div class="topnav">
-            <a href="/">Home</a>
-            <a href="/experience">Work Experiences</a>
-            <a href="/hobbies">Hobbies</a>
-            <a href="/education">Current/Previous Education</a>
-            <a href="/places">Where We've Been</a>
-            <a href="/contact">Contact Information</a>
-          </div>
-    </header>
-
-    <div id="header">
-        {% for profile in profiles %}
-        <div class="profile">
-            <div id="profile-picture" class="profile-picture">
-                <img src={{ profile.photo }}>
-            </div>
-            <h1>{{ profile.name }}</h1>
-        </div>
-        {% endfor %}
-    </div>
-
-</body>
-</html>
+<div>
+{% for profile in profiles %}
+<div class="education">
+    {% for educationItem in profile["education"] %}
+    <h2>{{ educationItem.school }}</h2>
+    <h2>{{ educationItem.major }}</h2>
+    <h3>{{ educationItem.startMonth }} {{ educationItem.startYear }} - {{ educationItem.endMonth }} {{ educationItem.endYear }}</h3>
+    <hr style="width:100%;text-align:center">
+    {% endfor %}
+</div>
+{% endfor %}
+{% endblock body %}

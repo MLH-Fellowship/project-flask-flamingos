@@ -18,9 +18,9 @@ def index():
 def hobbies():
     return render_template('hobbies.html', profiles = parsedProfiles, url=os.getenv("URL"))
 
-@app.route('/experience')
+@app.route('/work-experience')
 def experience():
-    return render_template('experience.html', profiles = parsedProfiles, url=os.getenv("URL"))
+    return render_template('work-experience.html', profiles = parsedProfiles, url=os.getenv("URL"))
 
 @app.route('/education')
 def education():

@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+{% block body %}
+<div class="semi-header">
+    <h1>Welcome to our Experience Page!</h1>
+    <h3>Some of our work experiences include...</h3>
+</div>
+
+<hr style="width:70%;text-align:center">
+
+<div>
+{% for profile in profiles %}
+<div class="experience">
+    {% for experience in profile["workExperience"] %}
+    <h2>{{ experience.company }}</h2>
+    <h2>{{ experience.title }}</h2>
+    <h3>{{ experience.description }}</h3>
+    {% if experience.present %}
+    <h3>{{ experience.startMonth }} {{ experience.startYear }} - Present</h3>
+    {% else %}
+    <h3>{{ experience.startMonth }} {{ experience.startYear }} - {{ experience.endMonth }} {{ experience.endYear }}</h3>
+    {% endif %}
+    <hr style="width:100%;text-align:center">
+    {% endfor %}
+</div>
+{% endfor %}
+{% endblock body %}
