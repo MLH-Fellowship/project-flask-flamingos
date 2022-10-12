@@ -1,4 +1,4 @@
-from importlib.resources import Package
+from importlib_resources import Package
 import os
 from flask import Flask, render_template, request
 from dotenv import load_dotenv
