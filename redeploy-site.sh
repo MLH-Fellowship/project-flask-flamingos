@@ -1,7 +1,8 @@
 #!/bin/bash
 
 tmux kill-server
-cd project-flask-flamingos
+
+cd ~/project-flask-flamingos
 
 git fetch && git reset origin/main --hard
 
