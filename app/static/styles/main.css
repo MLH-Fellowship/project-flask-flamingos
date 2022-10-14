@@ -243,3 +243,38 @@ div.vertical-line{
     overflow: hidden;
     object-fit: scale-down;
 }
+
+
+/* timeline page */
+.timeline {
+    display: flex;
+}
+.form-timeline {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-posts {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.content-input {
+    display: block;
+    width: 97.4%;
+    height: 100px;
+    margin: 0;
+}
+
+.submit {
+    padding: 15px;
+    background-color: #1d539f;
+    color: white;
+}
+
+.posts {
+}

@@ -1,0 +1,63 @@
+{% extends "index.html" %}
+{% block body %}
+<section class="timeline">
+    <section class="form-timeline">
+        <h2>Submit to the timeline!</h2>
+        <form id="form">
+            <input class="name-content" name="name" placeholder="Name" type="text">
+            <input class="email-input" name="email" type="email" placeholder="Email">
+            <input class="content-input" name="content" type="text" placeholder="Post to the Timeline!">
+            <button class="submit" type="submit">Submit</button>
+        </form> 
+    </section>
+    <section class="timeline-posts">
+        <h2>View all posts!</h2>
+        <section class="posts">
+            <ul id="posts_on_timeline">
+
+            </ul>
+        </section>
+    </section>
+</section>
+
+<script>
+    window.addEventListener('load', (event) => {
+        fetch('/api/timeline_post')
+        .then(response => response.json())
+        .then(data => {
+            addListItems(data.timeline_posts)
+        })
+    });
+
+    function addListItems(list) {
+        console.log(list)
+        for (let i=list.length -1 ;i >=0;i--) {
+            let listItem = document.createElement('li');
+            listItem.className = 'timelist-list-item'
+            listItem.innerHTML = `${list[i].name}, ${list[i].email} wrote ${list[i].content} at ${list[i].created_at}`
+            document.getElementById("posts_on_timeline").appendChild(listItem);
+        }
+    }
+
+    function insertAtTheEnd(data){
+            let listContainer = document.getElementById("posts_on_timeline")
+            let listItem = document.createElement('li');
+            listItem.className = 'timelist-list-item'
+            listItem.innerHTML = `${data.name}, ${data.email} wrote ${data.content} at ${data.created_at}`
+            listContainer.appendChild(listItem);
+    }
+
+    const form = document.getElementById('form');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault()
+        const payload = new FormData(form)
+        fetch('/api/timeline_post', {
+        method: 'POST',
+        body: payload,
+        })
+        .then(res => res.json())
+        .then(data => insertAtTheEnd(data))
+
+    })
+</script>
+{% endblock body %}
