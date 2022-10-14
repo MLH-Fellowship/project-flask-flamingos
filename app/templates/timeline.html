@@ -31,7 +31,7 @@
 
     function addListItems(list) {
         console.log(list)
-        for (let i=list.length -1 ;i >=0;i--) {
+        for (let i=0;i < list.length; i++) {
             let listItem = document.createElement('li');
             listItem.className = 'timelist-list-item'
             listItem.innerHTML = `${list[i].name}, ${list[i].email} wrote ${list[i].content} at ${list[i].created_at}`
@@ -39,12 +39,12 @@
         }
     }
 
-    function insertAtTheEnd(data){
+    function insertAtTop(data){
             let listContainer = document.getElementById("posts_on_timeline")
             let listItem = document.createElement('li');
             listItem.className = 'timelist-list-item'
             listItem.innerHTML = `${data.name}, ${data.email} wrote ${data.content} at ${data.created_at}`
-            listContainer.appendChild(listItem);
+            listContainer.insertBefore(listItem, listContainer.firstChild);
     }
 
     const form = document.getElementById('form');
@@ -56,7 +56,7 @@
         body: payload,
         })
         .then(res => res.json())
-        .then(data => insertAtTheEnd(data))
+        .then(data => insertAtTop(data))
 
     })
 </script>
