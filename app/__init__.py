@@ -60,6 +60,10 @@ def index():
 def hobbies():
     return render_template('hobbies.html', profiles = parsedProfiles, url=os.getenv("URL"))
 
+@app.route('/timeline')
+def timeline():
+    return render_template('timeline.html', title="MyTimeline")
+
 @app.route('/work-experience')
 def experience():
     return render_template('work-experience.html', profiles = parsedProfiles, url=os.getenv("URL"))

@@ -1,0 +1,67 @@
+{% extends "index.html" %}
+{% block body %}
+
+<div class="semi-header">
+    <h1>Submit to the timeline!</h1>
+</div>
+
+<div class="timeline">
+    <div class="form">
+        <form id="formVariables">
+            <input class="nameField" name="name" type="text" placeholder="Name">
+            <input class="emailField" name="email" type="email" placeholder="Email">
+            <input class="contentField" name="content" type="text" placeholder="Post to the Timeline!">
+            <div class="container">
+                <button class="submitButton" type="submit">Submit</button>
+            </div>
+        </form> 
+    </div>
+    <div class="timeline-posts">
+        <h1>Here's a list of the current posts!</h1>
+        <div class="posts">
+            <ul id="posts_on_timeline"></ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    window.addEventListener('load', (event) => {
+        fetch('/api/timeline_post')
+        .then(response => response.json())
+        .then(data => {
+            insert(data.timeline_posts)
+        })
+    });
+
+    function insert(list) {
+        console.log(list)
+        for (let i=list.length -1 ;i >=0;i--) {
+            let listItem = document.createElement('li');
+            listItem.className = 'timelist-list-item'
+            listItem.innerHTML = `${list[i].name}, ${list[i].email} wrote ${list[i].content} at ${list[i].created_at}`
+            document.getElementById("posts_on_timeline").appendChild(listItem);
+        }
+    }
+
+    function end(data){
+            let listContainer = document.getElementById("posts_on_timeline")
+            let listItem = document.createElement('li');
+            listItem.className = 'timelist-list-item'
+            listItem.innerHTML = `${data.name}, ${data.email} wrote ${data.content} at ${data.created_at}`
+            listContainer.appendChild(listItem);
+    }
+
+    const form = document.getElementById('formVariables');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault()
+        const payload = new FormData(form)
+        fetch('/api/timeline_post', {
+        method: 'POST',
+        body: payload,
+        })
+        .then(res => res.json())
+        .then(data => end(data))
+
+    })
+</script>
+{% endblock body %}

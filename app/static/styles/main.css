@@ -243,3 +243,44 @@ div.vertical-line{
     overflow: hidden;
     object-fit: scale-down;
 }
+
+div.timeline {
+    display: block;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.nameField, .emailField, .contentField {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.container{  
+    text-align: center;  
+    border-radius: 4px;
+}  
+
+ul {
+	margin: 1.5em; 
+    list-style-type: none;
+}
+ul li {
+	padding: .2em 0 .2em .5em;
+	font-weight: bold;
+	color: #666; 
+}
+ul li:hover {
+	cursor: pointer;
+	background-color: #f2f2f2;
+	color: #000; 
+}
