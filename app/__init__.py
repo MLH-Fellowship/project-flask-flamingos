@@ -10,6 +10,8 @@ from playhouse.shortcuts import model_to_dict
 
 load_dotenv()
 app = Flask(__name__)
+print(os.getenv("MYSQL_DATABASE"))
+print(os.getenv("MYSQL_USER"))
 
 mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"),
     user=os.getenv("MYSQL_USER"),

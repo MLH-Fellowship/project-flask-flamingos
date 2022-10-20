@@ -3,7 +3,7 @@
 import unittest
 from peewee import *
 
-from app import TimelinePost
+from app import TimelinePost #Is this import from init.py because is inside 
 
 MODELS = [TimelinePost]
 
