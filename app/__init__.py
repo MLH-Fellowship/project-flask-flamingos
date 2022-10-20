@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, Response
 from dotenv import load_dotenv
 import json
 from peewee import *
@@ -78,6 +78,16 @@ def post_time_line_post():
     name = request.form['name']
     email = request.form['email']
     content = request.form['content']
+    if not name or not name.strip():
+        return "Invalid name", 400
+    
+    if not email or not email.strip() or '@' not in email:
+        return "Invalid email", 400
+    if not content or not content.strip():
+        return Response(
+            "Invalid content",
+            status=400,
+        )
     timeline_post = TimelinePost.create(
         name=name, email=email, content=content)
     return model_to_dict(timeline_post)
