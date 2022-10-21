@@ -28,7 +28,19 @@ class AppTestCase(unittest.TestCase):
         json = response.get_json()
         assert "timeline_posts" in json
         assert len(json["timeline_posts"]) == 0
-    
+        # TODO Add more tests relating to the /api/timeline_post GET and POST
+        response = self.client.post("/api/timeline_post", data={"name": "John Doe", "email": "john@email.com", "content": "Hello world, I'm John!"})
+        assert response.status_code == 200
+        assert response.is_json
+        json = response.get_json()
+        assert "created_at" in json
+        assert '@' in json["email"]
+        # TODO Add more tests relating to the timeline page
+        response = self.client.get("/timeline")
+        assert response.status_code == 200
+        html = response.get_data(as_text=True)
+        assert "Submit to the timeline!" in html
+         
 
     def test_malformed_timeline_post(self):
         # POST request missing name
