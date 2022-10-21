@@ -9,22 +9,26 @@ from app import app
 class AppTestCase(unittest.TestCase):
     def setUp(self):
         self.client = app.test_client()
-        print('set_up_done')
 
     def test_home(self):
-        print('test_home')
         response = self.client.get("/")
         assert response.status_code == 200
         html = response.get_data(as_text=True)
-        print(html)
         assert "<title></title>" in html
-        # TODO Add more tests relating to the home page
+        # TODO Add more tests relating to the home page §§§§§§§
+        assert '<a href="/">Home</a>' in html
+        assert '<a href="/work-experience">' in html
+        assert '<a href="/hobbies">' in html
+        assert '<a href="/education">' in html
 
     def test_timeline(self):
-        print('test_timeline')
         response = self.client.get("/api/timeline_post")
         assert response.status_code == 200
         assert response.is_json
+        json = response.get_json()
+        assert "timeline_posts" in json
+        assert len(json["timeline_posts"]) == 0
+    
 
     def test_malformed_timeline_post(self):
         # POST request missing name
