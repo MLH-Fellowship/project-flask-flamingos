@@ -22,7 +22,6 @@ else:
         port=3306
     )
 
-print(mydb)
 
 class TimelinePost(Model):
     name = CharField()
