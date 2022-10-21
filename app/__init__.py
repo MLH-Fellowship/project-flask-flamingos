@@ -75,19 +75,15 @@ def timeline():
 
 @app.route('/api/timeline_post', methods=['POST'])
 def post_time_line_post():
-    name = request.form['name']
-    email = request.form['email']
-    content = request.form['content']
+    name = request.form.get("name", None)
+    email = request.form.get("email", None)
+    content = request.form.get("content", None)
     if not name or not name.strip():
         return "Invalid name", 400
-    
     if not email or not email.strip() or '@' not in email:
         return "Invalid email", 400
     if not content or not content.strip():
-        return Response(
-            "Invalid content",
-            status=400,
-        )
+        return "Invalid content", 400
     timeline_post = TimelinePost.create(
         name=name, email=email, content=content)
     return model_to_dict(timeline_post)
