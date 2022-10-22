@@ -2,6 +2,7 @@
 
 import unittest
 from peewee import *
+from playhouse.shortcuts import model_to_dict
 
 from app import TimelinePost #Is this import from init.py because is inside 
 
@@ -32,6 +33,12 @@ class TestTimelinePost(unittest.TestCase):
         # Create 2 timeline posts.
         first_post = TimelinePost.create(name='John Doe', email='john@example.com', content='Hello world, I\'m John!')
         assert first_post.id == 1
-        second_post = TimelinePost.create(name='Jane Doe', email='jame@example.com', content='Hello world, I\'m Jane!')
+        second_post = TimelinePost.create(name='Jane Doe', email='jane@example.com', content='Hello world, I\'m Jane!')
         assert second_post.id == 2
         # TODO: Get timeline posts and assert that they are correct
+        time_posts = [model_to_dict(p) for p in TimelinePost.select().order_by(TimelinePost.created_at)]
+        assert len(time_posts) == 2
+        self.assertEqual(time_posts[0]["name"], 'John Doe', "Not equal")
+        self.assertEqual(time_posts[1]["name"], 'Jane Doe', "Not equal")
+        self.assertEqual(time_posts[0]["email"], 'john@example.com', "Not the same")
+        self.assertEqual(time_posts[1]["email"], 'jane@example.com', "Not the same")
