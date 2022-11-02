@@ -4,8 +4,7 @@ cd ~/project-flask-flamingos
 
 git fetch && git reset origin/main --hard
 
-source python3-virtualenv/bin/activate
+docker compose -f docker-compose.prod.yml down
 
-pip install -r requirements.txt
+docker compoes -f docker-compose.prod.yml up -d --build
 
-systemctl restart portfolio

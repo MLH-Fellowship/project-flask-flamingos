@@ -5,7 +5,7 @@ services:
     build: .
     restart: always
     env_file:
-      - .env
+      - example.env
     ports:
       - "5000:5000"
     depends_on:
@@ -16,7 +16,7 @@ services:
     image: mariadb
     restart: always
     env_file:
-      - .env
+      - example.env
     volumes:
       - mydatabase:/var/lib/mysql
 
