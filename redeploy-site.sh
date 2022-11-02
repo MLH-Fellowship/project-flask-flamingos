@@ -6,5 +6,5 @@ cd ~/scripts/project-flask-flamingos
 
 docker compose -f docker-compose.prod.yml down
 
-docker compoes -f docker-compose.prod.yml up -d --build
+docker compose -f docker-compose.prod.yml up -d --build
 
