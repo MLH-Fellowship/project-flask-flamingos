@@ -2,7 +2,7 @@
 
 cd ~/scripts/project-flask-flamingos
 
-#git fetch && git reset origin/main --hard
+git fetch && git reset origin/main --hard
 
 docker compose -f docker-compose.prod.yml down
 
