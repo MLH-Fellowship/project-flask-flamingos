@@ -6,7 +6,6 @@ python3-virtualenv
 flask.sqlite
 .DS_Store
 
-#vscode gitignore 
 # Created by https://www.gitignore.io/api/visualstudiocode
 # Edit at https://www.gitignore.io/?templates=visualstudiocode
 
