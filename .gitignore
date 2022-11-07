@@ -1,6 +1,6 @@
 .venv
-.vscode
 __pycache__
+.vscode
 *.pyc
 .env
 python3-virtualenv
