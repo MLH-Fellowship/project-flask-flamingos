@@ -3,32 +3,32 @@ on:
   push:
     branches:
       - main
-   pull_request:
-      branches:
-         - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-   test:
-      runs-on: ubuntu-latest
-      name: Run Tests
-      env:
-         TESTING: true
-      steps:
-         - name: Checkout Repository
-           uses: actions/checkout@v2
+  test:
+    runs-on: ubuntu-latest
+    name: Run Tests
+    env:
+      TESTING: true
+    steps:
+      - name: Checkout Repository
+      uses: actions/checkout@v2
 
-         - name: Setup Python
-           uses: actions/setup-python@v4
-           with:
-             python-version: '3.6.8'   
+      - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.6.8'   
 
-         - name: Setup Python Virtual Environment
-           run: python3 -m venv python3-virtualenv
+      - name: Setup Python Virtual Environment
+      run: python3 -m venv python3-virtualenv
 
-         - name: Install Dependencies
-           run: python3-virtualenv/bin/pip install -r requirements.txt
+      - name: Install Dependencies
+      run: python3-virtualenv/bin/pip install -r requirements.txt
 
-         - name: Run Tests
-           run: ./run_test.sh
+      - name: Run Tests
+      run: ./run_test.sh
 
         
